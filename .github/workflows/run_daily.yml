@@ -1,9 +1,11 @@
 name: RUN test CI/CD actions
 
 on:
-  push:
-  schedule:
-    - cron:  "* * * * *"
+  workflow_dispatch:
+
+  # push:
+  # schedule:
+  #   - cron:  "* * * * *"
 
 env:
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
