@@ -3,7 +3,7 @@ name: RUN test CI/CD actions
 on:
   push:
   schedule:
-    - cron:  "*****"
+    - cron:  "* * * * *"
 
 env:
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
