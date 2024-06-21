@@ -9,5 +9,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Install Dependencies
+        run: pip3 install -r requeirements.txt
+
       - name: Run python script
         run: python3 app.py
