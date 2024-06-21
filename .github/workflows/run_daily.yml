@@ -3,8 +3,8 @@ name: RUN test CI/CD actions
 on: [push]
 
 env:
-  TELEGRAM_TOKEN: ${ secrets.TELEGRAM_TOKEN }
-  TELEGRAM_CHANNEL_ID: ${ secrets.TELEGRAM_CHANNEL_ID }
+  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+  TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
 
 
 jobs:
