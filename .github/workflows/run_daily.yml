@@ -8,5 +8,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
       - name: Run python script
-        uses: python3 app.py
+        run: python3 app.py
