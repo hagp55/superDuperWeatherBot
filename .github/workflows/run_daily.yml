@@ -1,0 +1,10 @@
+name: RUN test CI/CD actions
+
+on: [push]
+
+jobs:
+  Daily-Run-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
