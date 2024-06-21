@@ -58,6 +58,7 @@ def send_message(message):
     }
     url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
     res = requests.post(url, params=params)
+    print(url)
     return res.json()
 
 
